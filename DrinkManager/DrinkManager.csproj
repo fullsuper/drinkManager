@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A064F05D-96CB-42D1-A1FE-CA178A81649E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DrinkManager</RootNamespace>
+    <AssemblyName>DrinkManager</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\BLLBill.cs" />
+    <Compile Include="BLL\BLLEmployee.cs" />
+    <Compile Include="BLL\BLLPurchase.cs" />
+    <Compile Include="BLL\BLLStorageItem.cs" />
+    <Compile Include="BLL\BLLSupplier.cs" />
+    <Compile Include="BLL\BLLTable.cs" />
+    <Compile Include="BLL\BLLType.cs" />
+    <Compile Include="DAL\DALConnect.cs" />
+    <Compile Include="DTO\Bill.cs" />
+    <Compile Include="DTO\Customer.cs" />
+    <Compile Include="DTO\DetailBill.cs" />
+    <Compile Include="DTO\DetailShipment.cs" />
+    <Compile Include="DTO\Employee.cs" />
+    <Compile Include="DTO\Item.cs" />
+    <Compile Include="DTO\Service.cs" />
+    <Compile Include="DTO\Shipment.cs" />
+    <Compile Include="DTO\Supplier.cs" />
+    <Compile Include="DTO\Table.cs" />
+    <Compile Include="DTO\TypeItem.cs" />
+    <Compile Include="GUI\BillInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\BillInfoForm.Designer.cs">
+      <DependentUpon>BillInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ButtonImage1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ButtonImage1.Designer.cs">
+      <DependentUpon>ButtonImage1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ButtonItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ButtonItem.Designer.cs">
+      <DependentUpon>ButtonItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ButtonMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ButtonMenu.Designer.cs">
+      <DependentUpon>ButtonMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ConfigSupplier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ConfigSupplier.Designer.cs">
+      <DependentUpon>ConfigSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ConfigTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ConfigTable.Designer.cs">
+      <DependentUpon>ConfigTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ConfigType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ConfigType.Designer.cs">
+      <DependentUpon>ConfigType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ConfigTypeItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ConfigTypeItem.Designer.cs">
+      <DependentUpon>ConfigTypeItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ConfigTypeService.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ConfigTypeService.Designer.cs">
+      <DependentUpon>ConfigTypeService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ControlPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ControlPanel.Designer.cs">
+      <DependentUpon>ControlPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ctrlBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ctrlBill.Designer.cs">
+      <DependentUpon>ctrlBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ctrlConfigure.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ctrlConfigure.Designer.cs">
+      <DependentUpon>ctrlConfigure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ctrlStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ctrlStaff.Designer.cs">
+      <DependentUpon>ctrlStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ctrlStorageItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ctrlStorageItem.Designer.cs">
+      <DependentUpon>ctrlStorageItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ctrlPurchase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ctrlPurchase.Designer.cs">
+      <DependentUpon>ctrlPurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\NewTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\NewTable.Designer.cs">
+      <DependentUpon>NewTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\BillInfoForm.resx">
+      <DependentUpon>BillInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ButtonImage1.resx">
+      <DependentUpon>ButtonImage1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ButtonItem.resx">
+      <DependentUpon>ButtonItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ButtonMenu.resx">
+      <DependentUpon>ButtonMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ConfigSupplier.resx">
+      <DependentUpon>ConfigSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ConfigTable.resx">
+      <DependentUpon>ConfigTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ConfigType.resx">
+      <DependentUpon>ConfigType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ConfigTypeItem.resx">
+      <DependentUpon>ConfigTypeItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ConfigTypeService.resx">
+      <DependentUpon>ConfigTypeService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ControlPanel.resx">
+      <DependentUpon>ControlPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ctrlBill.resx">
+      <DependentUpon>ctrlBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ctrlConfigure.resx">
+      <DependentUpon>ctrlConfigure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ctrlStaff.resx">
+      <DependentUpon>ctrlStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ctrlStorageItem.resx">
+      <DependentUpon>ctrlStorageItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ctrlPurchase.resx">
+      <DependentUpon>ctrlPurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\NewTable.resx">
+      <DependentUpon>NewTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\date.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backpack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addicon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deleteicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemdelete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repair1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\truck_1-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\type.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plusicon.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plusicon.svg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\censor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cleaner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
