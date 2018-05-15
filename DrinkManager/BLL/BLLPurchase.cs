@@ -105,6 +105,10 @@ namespace DrinkManager.BLL
             int iid = getItemID(item);
             DAL.DALConnect.Instance.MyExecuteNonQuery("insert into detail_bills(bid,iid,amount) values (" + bid + "," + iid + "," + amount + ")", CommandType.Text);
         }
+        public void updateItems(DTO.DetailBill db)
+        {
+            DAL.DALConnect.Instance.MyExecuteNonQuery("update items set amount = amount - " + db.Amount + " where nameitem = N'" + db.Item + "'", CommandType.Text);
+        }
 
     }
 }

@@ -92,5 +92,13 @@ namespace DrinkManager.GUI
             pnlMainScreen.Controls.Add(ctrlMain);
             ctrlMain.Show();
         }
+
+        private void btnImportGoods_Click(object sender, EventArgs e)
+        {
+            ctrlMain.Dispose();
+            ctrlMain = new ctrlImportGood();
+            pnlMainScreen.Controls.Add(ctrlMain);
+            ctrlMain.Show();
+        }
     }
 }

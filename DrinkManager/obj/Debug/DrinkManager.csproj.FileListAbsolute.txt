@@ -23,3 +23,4 @@ E:\VS\DrinkManagerSo\DrinkManager\obj\Debug\DrinkManager.GUI.ConfigTypeItem.reso
 E:\VS\DrinkManagerSo\DrinkManager\obj\Debug\DrinkManager.GUI.ConfigTypeService.resources
 E:\VS\DrinkManagerSo\DrinkManager\obj\Debug\DrinkManager.GUI.ctrlPurchase.resources
 E:\VS\DrinkManagerSo\DrinkManager\obj\Debug\DrinkManager.GUI.ButtonItem.resources
+E:\VS\DrinkManagerSo\DrinkManager\obj\Debug\DrinkManager.GUI.ctrlImportGood.resources

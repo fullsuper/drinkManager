@@ -47,12 +47,18 @@
   <ItemGroup>
     <Compile Include="BLL\BLLBill.cs" />
     <Compile Include="BLL\BLLEmployee.cs" />
+    <Compile Include="BLL\BLLImportGoods.cs" />
     <Compile Include="BLL\BLLPurchase.cs" />
     <Compile Include="BLL\BLLStorageItem.cs" />
     <Compile Include="BLL\BLLSupplier.cs" />
     <Compile Include="BLL\BLLTable.cs" />
     <Compile Include="BLL\BLLType.cs" />
     <Compile Include="DAL\DALConnect.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DTO\Bill.cs" />
     <Compile Include="DTO\Customer.cs" />
     <Compile Include="DTO\DetailBill.cs" />
@@ -136,6 +142,12 @@
     <Compile Include="GUI\ctrlConfigure.Designer.cs">
       <DependentUpon>ctrlConfigure.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\ctrlImportGood.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ctrlImportGood.Designer.cs">
+      <DependentUpon>ctrlImportGood.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\ctrlStaff.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -198,6 +210,9 @@
     <EmbeddedResource Include="GUI\ctrlConfigure.resx">
       <DependentUpon>ctrlConfigure.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ctrlImportGood.resx">
+      <DependentUpon>ctrlImportGood.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\ctrlStaff.resx">
       <DependentUpon>ctrlStaff.cs</DependentUpon>
     </EmbeddedResource>
@@ -221,6 +236,17 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="ClassDiagram1.cd" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -329,6 +355,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Report\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

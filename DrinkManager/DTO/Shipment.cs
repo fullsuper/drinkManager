@@ -24,6 +24,14 @@ namespace DrinkManager.DTO
             rate = row["rate"].ToString();
         }
 
+        public Shipment(DateTime tradingdate, string censor, string supplier, string rate)
+        {
+            this.tradingdate = tradingdate;
+            this.censor = censor;
+            this.supplier = supplier;
+            this.rate = rate;
+        }
+
         public Shipment(int id, DateTime tradingdate, string censor, string supplier, string rate)
         {
             this.id = id;

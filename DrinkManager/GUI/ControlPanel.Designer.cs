@@ -44,6 +44,7 @@
             this.btnStorage = new DrinkManager.GUI.ButtonMenu();
             this.btnStatistic = new DrinkManager.GUI.ButtonMenu();
             this.ptbLogo = new System.Windows.Forms.PictureBox();
+            this.btnImportGoods = new DrinkManager.GUI.ButtonMenu();
             this.pnlMenu.SuspendLayout();
             this.pnlLogo.SuspendLayout();
             this.pnlHeader.SuspendLayout();
@@ -56,6 +57,7 @@
             // pnlMenu
             // 
             this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(40)))), ((int)(((byte)(62)))));
+            this.pnlMenu.Controls.Add(this.btnImportGoods);
             this.pnlMenu.Controls.Add(this.btnPurchase);
             this.pnlMenu.Controls.Add(this.btnConfigure);
             this.pnlMenu.Controls.Add(this.btnBillStatistic);
@@ -159,10 +161,10 @@
             // 
             this.btnPurchase.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPurchase.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnPurchase.IconImage = global::DrinkManager.Properties.Resources.repair;
-            this.btnPurchase.Location = new System.Drawing.Point(0, 510);
+            this.btnPurchase.IconImage = global::DrinkManager.Properties.Resources.shopping;
+            this.btnPurchase.Location = new System.Drawing.Point(0, 450);
             this.btnPurchase.Name = "btnPurchase";
-            this.btnPurchase.Size = new System.Drawing.Size(200, 82);
+            this.btnPurchase.Size = new System.Drawing.Size(200, 70);
             this.btnPurchase.TabIndex = 6;
             this.btnPurchase.TextButton = "Purchase";
             this.btnPurchase.Click += new System.EventHandler(this.btnPurchase_Click);
@@ -172,9 +174,9 @@
             this.btnConfigure.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnConfigure.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnConfigure.IconImage = global::DrinkManager.Properties.Resources.repair;
-            this.btnConfigure.Location = new System.Drawing.Point(0, 428);
+            this.btnConfigure.Location = new System.Drawing.Point(0, 380);
             this.btnConfigure.Name = "btnConfigure";
-            this.btnConfigure.Size = new System.Drawing.Size(200, 82);
+            this.btnConfigure.Size = new System.Drawing.Size(200, 70);
             this.btnConfigure.TabIndex = 5;
             this.btnConfigure.TextButton = "Config";
             this.btnConfigure.Click += new System.EventHandler(this.btnConfigure_Click);
@@ -184,9 +186,9 @@
             this.btnBillStatistic.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnBillStatistic.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnBillStatistic.IconImage = global::DrinkManager.Properties.Resources.bill;
-            this.btnBillStatistic.Location = new System.Drawing.Point(0, 346);
+            this.btnBillStatistic.Location = new System.Drawing.Point(0, 310);
             this.btnBillStatistic.Name = "btnBillStatistic";
-            this.btnBillStatistic.Size = new System.Drawing.Size(200, 82);
+            this.btnBillStatistic.Size = new System.Drawing.Size(200, 70);
             this.btnBillStatistic.TabIndex = 4;
             this.btnBillStatistic.TextButton = "Bill";
             this.btnBillStatistic.Click += new System.EventHandler(this.btnBillStatistic_Click);
@@ -196,9 +198,9 @@
             this.btnStaffManage.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnStaffManage.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnStaffManage.IconImage = global::DrinkManager.Properties.Resources.employee;
-            this.btnStaffManage.Location = new System.Drawing.Point(0, 264);
+            this.btnStaffManage.Location = new System.Drawing.Point(0, 240);
             this.btnStaffManage.Name = "btnStaffManage";
-            this.btnStaffManage.Size = new System.Drawing.Size(200, 82);
+            this.btnStaffManage.Size = new System.Drawing.Size(200, 70);
             this.btnStaffManage.TabIndex = 3;
             this.btnStaffManage.TextButton = "Staff";
             this.btnStaffManage.Click += new System.EventHandler(this.btnStaffManage_Click);
@@ -208,9 +210,9 @@
             this.btnStorage.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnStorage.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnStorage.IconImage = global::DrinkManager.Properties.Resources.product;
-            this.btnStorage.Location = new System.Drawing.Point(0, 182);
+            this.btnStorage.Location = new System.Drawing.Point(0, 170);
             this.btnStorage.Name = "btnStorage";
-            this.btnStorage.Size = new System.Drawing.Size(200, 82);
+            this.btnStorage.Size = new System.Drawing.Size(200, 70);
             this.btnStorage.TabIndex = 2;
             this.btnStorage.TextButton = "Storage";
             this.btnStorage.Click += new System.EventHandler(this.btnStorage_Click);
@@ -222,7 +224,7 @@
             this.btnStatistic.IconImage = global::DrinkManager.Properties.Resources.addicon;
             this.btnStatistic.Location = new System.Drawing.Point(0, 100);
             this.btnStatistic.Name = "btnStatistic";
-            this.btnStatistic.Size = new System.Drawing.Size(200, 82);
+            this.btnStatistic.Size = new System.Drawing.Size(200, 70);
             this.btnStatistic.TabIndex = 1;
             this.btnStatistic.TextButton = "Statistic";
             this.btnStatistic.Click += new System.EventHandler(this.buttonMenu1_Click);
@@ -236,6 +238,18 @@
             this.ptbLogo.Size = new System.Drawing.Size(50, 50);
             this.ptbLogo.TabIndex = 0;
             this.ptbLogo.TabStop = false;
+            // 
+            // btnImportGoods
+            // 
+            this.btnImportGoods.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnImportGoods.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnImportGoods.IconImage = global::DrinkManager.Properties.Resources.truck_1_512;
+            this.btnImportGoods.Location = new System.Drawing.Point(0, 520);
+            this.btnImportGoods.Name = "btnImportGoods";
+            this.btnImportGoods.Size = new System.Drawing.Size(200, 70);
+            this.btnImportGoods.TabIndex = 7;
+            this.btnImportGoods.TextButton = "Import";
+            this.btnImportGoods.Click += new System.EventHandler(this.btnImportGoods_Click);
             // 
             // ControlPanel
             // 
@@ -281,5 +295,6 @@
         private ButtonMenu btnBillStatistic;
         private ButtonMenu btnConfigure;
         private ButtonMenu btnPurchase;
+        private ButtonMenu btnImportGoods;
     }
 }

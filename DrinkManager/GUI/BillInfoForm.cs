@@ -96,8 +96,13 @@ namespace DrinkManager.GUI
             int bid = BLL.BLLPurchase.Instance.getLastBillID();
             // insert detailbill => trừ amount bên item (param bid)
             foreach (DetailBill i in lstDB)
+            {
                 BLL.BLLPurchase.Instance.insertDetailBill(i.Item, bid, i.Amount);
+                BLL.BLLPurchase.Instance.updateItems(i);
+            }
+                
             BLL.BLLPurchase.Instance.Done = true;
+
             Dispose();
         }
     }
