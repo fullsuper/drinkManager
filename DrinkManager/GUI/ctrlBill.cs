@@ -41,5 +41,59 @@ namespace DrinkManager.GUI
             int bid = Convert.ToInt16(lblID.Text);
             (new BillInfoForm(bid)).ShowDialog();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (pnlFind.Visible == false)
+            pnlFind.Visible = true;
+            else pnlFind.Visible = false;
+
+        }
+
+        private void btnFind_Click(object sender, EventArgs e)
+        {
+            if (!checkIlegalValue())
+            {
+                MessageBox.Show("Thông tin không hợp lệ!");
+                return;
+            }
+            dgvBill.DataSource = BLL.BLLBill.Instance.findData(txtFindCustomer.Text, txtFromPrice.Text, txtToPrice.Text, txtFindStaff.Text, txtFromDate.Text, txtToDate.Text, txtTable.Text);
+
+        }
+
+        private bool checkIlegalValue()
+        {
+            if (txtFindCustomer.Text == "" && txtFindStaff.Text == "" && txtFromDate.Text == "" && txtToDate.Text == "" && txtToPrice.Text == "" && txtFromPrice.Text == "" && txtTable.Text == "")
+                return false;
+            try
+            {
+                if(txtTable.Text!="")
+                     Convert.ToInt16(txtTable.Text);
+                if (txtToPrice.Text != "")
+                    Convert.ToInt64(txtToPrice.Text);
+                if (txtFromPrice.Text != "")
+                    Convert.ToInt64(txtFromPrice.Text);
+                if (txtToDate.Text != "")
+                    Convert.ToDateTime(txtToDate.Text);
+                if (txtFromDate.Text != "")
+                    Convert.ToDateTime(txtFromDate.Text);
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        private void ptbReload_Click(object sender, EventArgs e)
+        {
+            LoadDGV();
+        }
     }
 }

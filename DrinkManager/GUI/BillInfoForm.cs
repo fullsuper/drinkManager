@@ -13,18 +13,26 @@ namespace DrinkManager.GUI
 {
     public partial class BillInfoForm : Form
     {
+        int bid;
         List<DTO.DetailBill> lstDB;
         public BillInfoForm()
         {
             InitializeComponent();
             btnPrintBill.Dispose();
         }
+
+        private void BtnPrintBill_Click(object sender, EventArgs e)
+        {
+            (new Report.Bill(this.bid)).Show();
+        }
+
         public BillInfoForm(int bid)
         {
             InitializeComponent();
             LoadBill(bid);
             LoadDetailItemBill(bid);
-            btnPrintBill.Dispose();
+            this.bid = bid;
+            btnPrintBill.Click += BtnPrintBill_Click;
         }
         public BillInfoForm(List<DTO.DetailBill> lstDB, String Customer, String Staff, int table, DateTime date)
         {
@@ -103,6 +111,7 @@ namespace DrinkManager.GUI
                 
             BLL.BLLPurchase.Instance.Done = true;
 
+            (new Report.Bill(bid)).Show();
             Dispose();
         }
     }

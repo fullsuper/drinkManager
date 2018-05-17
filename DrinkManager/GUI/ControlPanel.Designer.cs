@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             this.pnlMenu = new System.Windows.Forms.Panel();
-            this.pnlLogo = new System.Windows.Forms.Panel();
-            this.lbl = new System.Windows.Forms.Label();
-            this.pnlHeader = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pnlMainScreen = new System.Windows.Forms.Panel();
-            this.ptbHide = new System.Windows.Forms.PictureBox();
-            this.ptbInfo = new System.Windows.Forms.PictureBox();
-            this.ptbQuit = new System.Windows.Forms.PictureBox();
+            this.btnImportGoods = new DrinkManager.GUI.ButtonMenu();
             this.btnPurchase = new DrinkManager.GUI.ButtonMenu();
             this.btnConfigure = new DrinkManager.GUI.ButtonMenu();
             this.btnBillStatistic = new DrinkManager.GUI.ButtonMenu();
             this.btnStaffManage = new DrinkManager.GUI.ButtonMenu();
             this.btnStorage = new DrinkManager.GUI.ButtonMenu();
             this.btnStatistic = new DrinkManager.GUI.ButtonMenu();
+            this.pnlLogo = new System.Windows.Forms.Panel();
+            this.lbl = new System.Windows.Forms.Label();
             this.ptbLogo = new System.Windows.Forms.PictureBox();
-            this.btnImportGoods = new DrinkManager.GUI.ButtonMenu();
+            this.pnlHeader = new System.Windows.Forms.Panel();
+            this.ptbHide = new System.Windows.Forms.PictureBox();
+            this.ptbInfo = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ptbQuit = new System.Windows.Forms.PictureBox();
+            this.pnlMainScreen = new System.Windows.Forms.Panel();
             this.pnlMenu.SuspendLayout();
             this.pnlLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).BeginInit();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbHide)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbInfo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbQuit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenu
@@ -70,6 +70,90 @@
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(200, 561);
             this.pnlMenu.TabIndex = 0;
+            // 
+            // btnImportGoods
+            // 
+            this.btnImportGoods.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnImportGoods.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnImportGoods.IconImage = global::DrinkManager.Properties.Resources.truck_1_512;
+            this.btnImportGoods.Location = new System.Drawing.Point(0, 448);
+            this.btnImportGoods.Name = "btnImportGoods";
+            this.btnImportGoods.Size = new System.Drawing.Size(200, 58);
+            this.btnImportGoods.TabIndex = 7;
+            this.btnImportGoods.TextButton = "Import";
+            this.btnImportGoods.Click += new System.EventHandler(this.btnImportGoods_Click);
+            // 
+            // btnPurchase
+            // 
+            this.btnPurchase.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPurchase.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnPurchase.IconImage = global::DrinkManager.Properties.Resources.shopping;
+            this.btnPurchase.Location = new System.Drawing.Point(0, 390);
+            this.btnPurchase.Name = "btnPurchase";
+            this.btnPurchase.Size = new System.Drawing.Size(200, 58);
+            this.btnPurchase.TabIndex = 6;
+            this.btnPurchase.TextButton = "Purchase";
+            this.btnPurchase.Click += new System.EventHandler(this.btnPurchase_Click);
+            // 
+            // btnConfigure
+            // 
+            this.btnConfigure.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnConfigure.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnConfigure.IconImage = global::DrinkManager.Properties.Resources.repair;
+            this.btnConfigure.Location = new System.Drawing.Point(0, 332);
+            this.btnConfigure.Name = "btnConfigure";
+            this.btnConfigure.Size = new System.Drawing.Size(200, 58);
+            this.btnConfigure.TabIndex = 5;
+            this.btnConfigure.TextButton = "Config";
+            this.btnConfigure.Click += new System.EventHandler(this.btnConfigure_Click);
+            // 
+            // btnBillStatistic
+            // 
+            this.btnBillStatistic.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBillStatistic.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnBillStatistic.IconImage = global::DrinkManager.Properties.Resources.bill;
+            this.btnBillStatistic.Location = new System.Drawing.Point(0, 274);
+            this.btnBillStatistic.Name = "btnBillStatistic";
+            this.btnBillStatistic.Size = new System.Drawing.Size(200, 58);
+            this.btnBillStatistic.TabIndex = 4;
+            this.btnBillStatistic.TextButton = "Bill";
+            this.btnBillStatistic.Click += new System.EventHandler(this.btnBillStatistic_Click);
+            // 
+            // btnStaffManage
+            // 
+            this.btnStaffManage.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnStaffManage.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnStaffManage.IconImage = global::DrinkManager.Properties.Resources.employee;
+            this.btnStaffManage.Location = new System.Drawing.Point(0, 216);
+            this.btnStaffManage.Name = "btnStaffManage";
+            this.btnStaffManage.Size = new System.Drawing.Size(200, 58);
+            this.btnStaffManage.TabIndex = 3;
+            this.btnStaffManage.TextButton = "Staff";
+            this.btnStaffManage.Click += new System.EventHandler(this.btnStaffManage_Click);
+            // 
+            // btnStorage
+            // 
+            this.btnStorage.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnStorage.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnStorage.IconImage = global::DrinkManager.Properties.Resources.product;
+            this.btnStorage.Location = new System.Drawing.Point(0, 158);
+            this.btnStorage.Name = "btnStorage";
+            this.btnStorage.Size = new System.Drawing.Size(200, 58);
+            this.btnStorage.TabIndex = 2;
+            this.btnStorage.TextButton = "Storage";
+            this.btnStorage.Click += new System.EventHandler(this.btnStorage_Click);
+            // 
+            // btnStatistic
+            // 
+            this.btnStatistic.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnStatistic.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnStatistic.IconImage = global::DrinkManager.Properties.Resources.addicon;
+            this.btnStatistic.Location = new System.Drawing.Point(0, 100);
+            this.btnStatistic.Name = "btnStatistic";
+            this.btnStatistic.Size = new System.Drawing.Size(200, 58);
+            this.btnStatistic.TabIndex = 1;
+            this.btnStatistic.TextButton = "Statistic";
+            this.btnStatistic.Click += new System.EventHandler(this.btnStatistic_Click);
             // 
             // pnlLogo
             // 
@@ -93,6 +177,16 @@
             this.lbl.TabIndex = 1;
             this.lbl.Text = "Drink\r\nManager";
             // 
+            // ptbLogo
+            // 
+            this.ptbLogo.BackgroundImage = global::DrinkManager.Properties.Resources.backpack;
+            this.ptbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ptbLogo.Location = new System.Drawing.Point(12, 24);
+            this.ptbLogo.Name = "ptbLogo";
+            this.ptbLogo.Size = new System.Drawing.Size(50, 50);
+            this.ptbLogo.TabIndex = 0;
+            this.ptbLogo.TabStop = false;
+            // 
             // pnlHeader
             // 
             this.pnlHeader.BackColor = System.Drawing.Color.DarkSlateGray;
@@ -105,26 +199,6 @@
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(784, 100);
             this.pnlHeader.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label1.Location = new System.Drawing.Point(162, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(431, 60);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Xin chào các bạn";
-            // 
-            // pnlMainScreen
-            // 
-            this.pnlMainScreen.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlMainScreen.Location = new System.Drawing.Point(200, 100);
-            this.pnlMainScreen.Name = "pnlMainScreen";
-            this.pnlMainScreen.Size = new System.Drawing.Size(784, 461);
-            this.pnlMainScreen.TabIndex = 2;
             // 
             // ptbHide
             // 
@@ -146,6 +220,18 @@
             this.ptbInfo.TabIndex = 2;
             this.ptbInfo.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.label1.Location = new System.Drawing.Point(162, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(431, 60);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Xin chào các bạn";
+            // 
             // ptbQuit
             // 
             this.ptbQuit.BackgroundImage = global::DrinkManager.Properties.Resources.close_button;
@@ -157,99 +243,13 @@
             this.ptbQuit.TabStop = false;
             this.ptbQuit.Click += new System.EventHandler(this.ptbQuit_Click);
             // 
-            // btnPurchase
+            // pnlMainScreen
             // 
-            this.btnPurchase.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPurchase.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnPurchase.IconImage = global::DrinkManager.Properties.Resources.shopping;
-            this.btnPurchase.Location = new System.Drawing.Point(0, 450);
-            this.btnPurchase.Name = "btnPurchase";
-            this.btnPurchase.Size = new System.Drawing.Size(200, 70);
-            this.btnPurchase.TabIndex = 6;
-            this.btnPurchase.TextButton = "Purchase";
-            this.btnPurchase.Click += new System.EventHandler(this.btnPurchase_Click);
-            // 
-            // btnConfigure
-            // 
-            this.btnConfigure.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnConfigure.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnConfigure.IconImage = global::DrinkManager.Properties.Resources.repair;
-            this.btnConfigure.Location = new System.Drawing.Point(0, 380);
-            this.btnConfigure.Name = "btnConfigure";
-            this.btnConfigure.Size = new System.Drawing.Size(200, 70);
-            this.btnConfigure.TabIndex = 5;
-            this.btnConfigure.TextButton = "Config";
-            this.btnConfigure.Click += new System.EventHandler(this.btnConfigure_Click);
-            // 
-            // btnBillStatistic
-            // 
-            this.btnBillStatistic.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBillStatistic.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnBillStatistic.IconImage = global::DrinkManager.Properties.Resources.bill;
-            this.btnBillStatistic.Location = new System.Drawing.Point(0, 310);
-            this.btnBillStatistic.Name = "btnBillStatistic";
-            this.btnBillStatistic.Size = new System.Drawing.Size(200, 70);
-            this.btnBillStatistic.TabIndex = 4;
-            this.btnBillStatistic.TextButton = "Bill";
-            this.btnBillStatistic.Click += new System.EventHandler(this.btnBillStatistic_Click);
-            // 
-            // btnStaffManage
-            // 
-            this.btnStaffManage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnStaffManage.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnStaffManage.IconImage = global::DrinkManager.Properties.Resources.employee;
-            this.btnStaffManage.Location = new System.Drawing.Point(0, 240);
-            this.btnStaffManage.Name = "btnStaffManage";
-            this.btnStaffManage.Size = new System.Drawing.Size(200, 70);
-            this.btnStaffManage.TabIndex = 3;
-            this.btnStaffManage.TextButton = "Staff";
-            this.btnStaffManage.Click += new System.EventHandler(this.btnStaffManage_Click);
-            // 
-            // btnStorage
-            // 
-            this.btnStorage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnStorage.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnStorage.IconImage = global::DrinkManager.Properties.Resources.product;
-            this.btnStorage.Location = new System.Drawing.Point(0, 170);
-            this.btnStorage.Name = "btnStorage";
-            this.btnStorage.Size = new System.Drawing.Size(200, 70);
-            this.btnStorage.TabIndex = 2;
-            this.btnStorage.TextButton = "Storage";
-            this.btnStorage.Click += new System.EventHandler(this.btnStorage_Click);
-            // 
-            // btnStatistic
-            // 
-            this.btnStatistic.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnStatistic.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnStatistic.IconImage = global::DrinkManager.Properties.Resources.addicon;
-            this.btnStatistic.Location = new System.Drawing.Point(0, 100);
-            this.btnStatistic.Name = "btnStatistic";
-            this.btnStatistic.Size = new System.Drawing.Size(200, 70);
-            this.btnStatistic.TabIndex = 1;
-            this.btnStatistic.TextButton = "Statistic";
-            this.btnStatistic.Click += new System.EventHandler(this.buttonMenu1_Click);
-            // 
-            // ptbLogo
-            // 
-            this.ptbLogo.BackgroundImage = global::DrinkManager.Properties.Resources.backpack;
-            this.ptbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ptbLogo.Location = new System.Drawing.Point(12, 24);
-            this.ptbLogo.Name = "ptbLogo";
-            this.ptbLogo.Size = new System.Drawing.Size(50, 50);
-            this.ptbLogo.TabIndex = 0;
-            this.ptbLogo.TabStop = false;
-            // 
-            // btnImportGoods
-            // 
-            this.btnImportGoods.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnImportGoods.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnImportGoods.IconImage = global::DrinkManager.Properties.Resources.truck_1_512;
-            this.btnImportGoods.Location = new System.Drawing.Point(0, 520);
-            this.btnImportGoods.Name = "btnImportGoods";
-            this.btnImportGoods.Size = new System.Drawing.Size(200, 70);
-            this.btnImportGoods.TabIndex = 7;
-            this.btnImportGoods.TextButton = "Import";
-            this.btnImportGoods.Click += new System.EventHandler(this.btnImportGoods_Click);
+            this.pnlMainScreen.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlMainScreen.Location = new System.Drawing.Point(200, 100);
+            this.pnlMainScreen.Name = "pnlMainScreen";
+            this.pnlMainScreen.Size = new System.Drawing.Size(784, 461);
+            this.pnlMainScreen.TabIndex = 2;
             // 
             // ControlPanel
             // 
@@ -267,12 +267,12 @@
             this.pnlMenu.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
             this.pnlLogo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).EndInit();
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbHide)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbInfo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbQuit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).EndInit();
             this.ResumeLayout(false);
 
         }

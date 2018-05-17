@@ -37,7 +37,7 @@
             // 
             this.lblText.AutoSize = true;
             this.lblText.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblText.Location = new System.Drawing.Point(73, 22);
+            this.lblText.Location = new System.Drawing.Point(73, 13);
             this.lblText.Name = "lblText";
             this.lblText.Size = new System.Drawing.Size(0, 30);
             this.lblText.TabIndex = 1;
@@ -50,7 +50,7 @@
             // ptbImage
             // 
             this.ptbImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptbImage.Location = new System.Drawing.Point(15, 15);
+            this.ptbImage.Location = new System.Drawing.Point(17, 3);
             this.ptbImage.Name = "ptbImage";
             this.ptbImage.Size = new System.Drawing.Size(50, 50);
             this.ptbImage.TabIndex = 0;
@@ -68,7 +68,7 @@
             this.Controls.Add(this.lblText);
             this.Controls.Add(this.ptbImage);
             this.Name = "ButtonMenu";
-            this.Size = new System.Drawing.Size(174, 82);
+            this.Size = new System.Drawing.Size(174, 57);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ButtonMenu_MouseDown);
             this.MouseEnter += new System.EventHandler(this.ButtonMenu_Enter);
             this.MouseLeave += new System.EventHandler(this.ButtonMenu_Leave);

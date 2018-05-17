@@ -27,6 +27,31 @@ namespace DrinkManager.BLL
                 "from bills b join customers c on b.cid = c.cid " +
                 "join employees s on b.cashier = s.eid", CommandType.Text);
         }
+        public DataTable findData(String cus, String fromPrice,String toPrice, String staff,String fromDate, String toDate, String table)
+        {
+            string strData = "select bid, c.name as customer, price, s.name as staff, purchasedate,tid "
+                +"from bills b join customers c on b.cid = c.cid "
+                + "join employees s on b.cashier = s.eid where ";
+
+            if (cus != "")
+                strData += " c.name = N'" + cus + "' and ";
+            if (fromPrice != "")
+                strData += " price >= " + fromPrice + " and ";
+            if (toPrice != "")
+                strData += " price <= " + toPrice + " and ";
+            if (staff != "")
+                strData += " s.name = N'" + staff + "' and ";
+            if (fromDate != "")
+                strData += " purchasedate >= '" + fromDate + "' and ";
+            if (toDate != "")
+                strData += " purchasedate <= '" + toDate + "' and ";
+            if (table != "")
+                strData += " tid = " + table;
+            else
+                strData = strData.Remove(strData.Length - 5, 4);
+
+            return DAL.DALConnect.Instance.ExecuteQueryDataSet(strData, CommandType.Text).Tables[0];
+        }
         public List<DTO.DetailBill> getListItemInBill(int bid)
         {
             List<DTO.DetailBill> lstDB = new List<DTO.DetailBill>();

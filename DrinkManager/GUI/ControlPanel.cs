@@ -45,7 +45,7 @@ namespace DrinkManager.GUI
 
         private void buttonMenu1_Click(object sender, EventArgs e)
         {
-            (new BillInfoForm()).Show();
+            //(new Report.Form1()).Show();
         }
 
         private void buttonMenu1_Enter(object sender, EventArgs e)
@@ -97,6 +97,14 @@ namespace DrinkManager.GUI
         {
             ctrlMain.Dispose();
             ctrlMain = new ctrlImportGood();
+            pnlMainScreen.Controls.Add(ctrlMain);
+            ctrlMain.Show();
+        }
+
+        private void btnStatistic_Click(object sender, EventArgs e)
+        {
+            ctrlMain.Dispose();
+            ctrlMain = new ctrlStatistic();
             pnlMainScreen.Controls.Add(ctrlMain);
             ctrlMain.Show();
         }
