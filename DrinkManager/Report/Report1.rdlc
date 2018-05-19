@@ -38,7 +38,7 @@
                           </Paragraphs>
                           <rd:DefaultName>bid</rd:DefaultName>
                           <Top>0.05556in</Top>
-                          <Left>3.97097in</Left>
+                          <Left>4.37374in</Left>
                           <Height>0.33333in</Height>
                           <Width>0.63542in</Width>
                           <Style>
@@ -297,9 +297,9 @@
                           </TablixRowHierarchy>
                           <DataSetName>DataSet1</DataSetName>
                           <Top>3.11458in</Top>
-                          <Left>0.72792in</Left>
+                          <Left>1.13069in</Left>
                           <Height>0.5in</Height>
-                          <Width>5.63194in</Width>
+                          <Width>5.63195in</Width>
                           <ZIndex>1</ZIndex>
                           <Style>
                             <Border>
@@ -333,7 +333,7 @@
                           </Paragraphs>
                           <rd:DefaultName>customer</rd:DefaultName>
                           <Top>1.12847in</Top>
-                          <Left>3.00569in</Left>
+                          <Left>3.40846in</Left>
                           <Height>0.28993in</Height>
                           <Width>3.14583in</Width>
                           <ZIndex>2</ZIndex>
@@ -368,7 +368,7 @@
                           </Paragraphs>
                           <rd:DefaultName>customer</rd:DefaultName>
                           <Top>0.77605in</Top>
-                          <Left>3.00569in</Left>
+                          <Left>3.40846in</Left>
                           <Height>0.28299in</Height>
                           <Width>3.14583in</Width>
                           <ZIndex>3</ZIndex>
@@ -403,7 +403,7 @@
                           </Paragraphs>
                           <rd:DefaultName>tid</rd:DefaultName>
                           <Top>1.78472in</Top>
-                          <Left>4.04042in</Left>
+                          <Left>4.44319in</Left>
                           <Height>0.32639in</Height>
                           <Width>1.58333in</Width>
                           <ZIndex>4</ZIndex>
@@ -438,7 +438,7 @@
                           </Paragraphs>
                           <rd:DefaultName>tid1</rd:DefaultName>
                           <Top>2.16667in</Top>
-                          <Left>4.04042in</Left>
+                          <Left>4.44319in</Left>
                           <Height>0.32292in</Height>
                           <Width>1.58333in</Width>
                           <ZIndex>5</ZIndex>
@@ -470,7 +470,7 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox16</rd:DefaultName>
                           <Top>0.05556in</Top>
-                          <Left>2.60292in</Left>
+                          <Left>3.00569in</Left>
                           <Height>0.33333in</Height>
                           <Width>1.35417in</Width>
                           <ZIndex>6</ZIndex>
@@ -502,7 +502,7 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox16</rd:DefaultName>
                           <Top>0.74827in</Top>
-                          <Left>0.51958in</Left>
+                          <Left>0.92235in</Left>
                           <Height>0.27778in</Height>
                           <Width>2.34375in</Width>
                           <ZIndex>7</ZIndex>
@@ -534,7 +534,7 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox16</rd:DefaultName>
                           <Top>1.06771in</Top>
-                          <Left>0.51958in</Left>
+                          <Left>0.92235in</Left>
                           <Height>0.3507in</Height>
                           <Width>2.34375in</Width>
                           <ZIndex>8</ZIndex>
@@ -566,7 +566,7 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox16</rd:DefaultName>
                           <Top>1.78472in</Top>
-                          <Left>3.21403in</Left>
+                          <Left>3.6168in</Left>
                           <Height>0.3507in</Height>
                           <Width>0.75694in</Width>
                           <ZIndex>9</ZIndex>
@@ -598,7 +598,7 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox16</rd:DefaultName>
                           <Top>2.13888in</Top>
-                          <Left>3.21403in</Left>
+                          <Left>3.6168in</Left>
                           <Height>0.3507in</Height>
                           <Width>0.75694in</Width>
                           <ZIndex>10</ZIndex>
@@ -633,7 +633,7 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox26</rd:DefaultName>
                           <Top>2.6875in</Top>
-                          <Left>0.93625in</Left>
+                          <Left>1.33902in</Left>
                           <Height>0.25in</Height>
                           <Width>1.46875in</Width>
                           <ZIndex>11</ZIndex>
@@ -649,7 +649,7 @@
                         </Textbox>
                         <Line Name="Line1">
                           <Top>1.55208in</Top>
-                          <Left>2.03in</Left>
+                          <Left>2.43277in</Left>
                           <Height>0in</Height>
                           <Width>3.24537in</Width>
                           <ZIndex>12</ZIndex>
@@ -661,7 +661,7 @@
                         </Line>
                         <Line Name="Line3">
                           <Top>2.61806in</Top>
-                          <Left>2.03in</Left>
+                          <Left>2.43277in</Left>
                           <Height>0in</Height>
                           <Width>3.24537in</Width>
                           <ZIndex>13</ZIndex>

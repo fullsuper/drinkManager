@@ -87,6 +87,7 @@ E:\VS\DrinkManagerSo\DrinkManager\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinFor
 E:\VS\DrinkManagerSo\DrinkManager\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 E:\VS\DrinkManagerSo\DrinkManager\obj\Debug\DrinkManager.csprojAssemblyReference.cache
 E:\VS\DrinkManagerSo\DrinkManager\obj\Debug\DrinkManager.exe.config
+E:\VS\DrinkManagerSo\DrinkManager\obj\Debug\DrinkManager.ctrlStatistic.resources
 E:\VS\DrinkManagerSo\DrinkManager\obj\Debug\DrinkManager.GUI.BillInfoForm.resources
 E:\VS\DrinkManagerSo\DrinkManager\obj\Debug\DrinkManager.GUI.ButtonImage1.resources
 E:\VS\DrinkManagerSo\DrinkManager\obj\Debug\DrinkManager.GUI.ButtonItem.resources
@@ -105,10 +106,9 @@ E:\VS\DrinkManagerSo\DrinkManager\obj\Debug\DrinkManager.GUI.ctrlStorageItem.res
 E:\VS\DrinkManagerSo\DrinkManager\obj\Debug\DrinkManager.GUI.ctrlPurchase.resources
 E:\VS\DrinkManagerSo\DrinkManager\obj\Debug\DrinkManager.GUI.NewTable.resources
 E:\VS\DrinkManagerSo\DrinkManager\obj\Debug\DrinkManager.Properties.Resources.resources
+E:\VS\DrinkManagerSo\DrinkManager\obj\Debug\DrinkManager.Report.Bill.resources
 E:\VS\DrinkManagerSo\DrinkManager\obj\Debug\DrinkManager.csproj.GenerateResource.cache
 E:\VS\DrinkManagerSo\DrinkManager\obj\Debug\DrinkManager.csproj.CoreCompileInputs.cache
 E:\VS\DrinkManagerSo\DrinkManager\obj\Debug\DrinkManager.csproj.CopyComplete
 E:\VS\DrinkManagerSo\DrinkManager\obj\Debug\DrinkManager.exe
 E:\VS\DrinkManagerSo\DrinkManager\obj\Debug\DrinkManager.pdb
-E:\VS\DrinkManagerSo\DrinkManager\obj\Debug\DrinkManager.Report.Bill.resources
-E:\VS\DrinkManagerSo\DrinkManager\obj\Debug\DrinkManager.ctrlStatistic.resources

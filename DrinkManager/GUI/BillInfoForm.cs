@@ -51,7 +51,28 @@ namespace DrinkManager.GUI
                 lsvItemBill.Items.Add(lvi);
             }
             lblTotalPrice.Text = SumValue(lstDB) + "";
+            btnPrintBill.Click += BtnPrintBill_Click1;
 
+        }
+
+        private void BtnPrintBill_Click1(object sender, EventArgs e)
+        {
+            // Đoạn này làm thao tác bán hàng
+
+            // tạo bill : cus,staff,table,date => (lấy bid - > lấy last bid)
+            BLL.BLLPurchase.Instance.insertBill(new Bill(lblCustomer.Text, Convert.ToInt64(lblTotalPrice.Text), lblCashier.Text, Convert.ToDateTime(lblDate.Text), Convert.ToInt16(lblTable.Text)));
+            int bid = BLL.BLLPurchase.Instance.getLastBillID();
+            // insert detailbill => trừ amount bên item (param bid)
+            foreach (DetailBill i in lstDB)
+            {
+                BLL.BLLPurchase.Instance.insertDetailBill(i.Item, bid, i.Amount);
+                BLL.BLLPurchase.Instance.updateItems(i);
+            }
+
+            BLL.BLLPurchase.Instance.Done = true;
+
+            (new Report.Bill(bid)).Show();
+            Dispose();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -93,26 +114,6 @@ namespace DrinkManager.GUI
                 sumValue += db.Price * db.Amount;
             }
             return sumValue;
-        }
-
-        private void btnPrintBill_Click(object sender, EventArgs e)
-        {
-            // Đoạn này làm thao tác bán hàng
-
-            // tạo bill : cus,staff,table,date => (lấy bid - > lấy last bid)
-            BLL.BLLPurchase.Instance.insertBill(new Bill(lblCustomer.Text,Convert.ToInt64(lblTotalPrice.Text),lblCashier.Text,Convert.ToDateTime(lblDate.Text),Convert.ToInt16(lblTable.Text)));
-            int bid = BLL.BLLPurchase.Instance.getLastBillID();
-            // insert detailbill => trừ amount bên item (param bid)
-            foreach (DetailBill i in lstDB)
-            {
-                BLL.BLLPurchase.Instance.insertDetailBill(i.Item, bid, i.Amount);
-                BLL.BLLPurchase.Instance.updateItems(i);
-            }
-                
-            BLL.BLLPurchase.Instance.Done = true;
-
-            (new Report.Bill(bid)).Show();
-            Dispose();
         }
     }
 }

@@ -38,7 +38,13 @@ namespace DrinkManager.GUI
 
         private void buttonImage11_Click(object sender, EventArgs e)
         {
-            int bid = Convert.ToInt16(lblID.Text);
+            int bid;
+            try {
+            bid = Convert.ToInt16(lblID.Text);
+            }
+            catch {
+                return;
+            }
             (new BillInfoForm(bid)).ShowDialog();
         }
 

@@ -75,10 +75,10 @@
     <Compile Include="BLL\BLLSupplier.cs" />
     <Compile Include="BLL\BLLTable.cs" />
     <Compile Include="BLL\BLLType.cs" />
-    <Compile Include="ctrlStatistic.cs">
+    <Compile Include="GUI\ctrlStatistic.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ctrlStatistic.Designer.cs">
+    <Compile Include="GUI\ctrlStatistic.Designer.cs">
       <DependentUpon>ctrlStatistic.cs</DependentUpon>
     </Compile>
     <Compile Include="DAL\DALConnect.cs" />
@@ -217,7 +217,7 @@
       <DependentUpon>Bill.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
-    <EmbeddedResource Include="ctrlStatistic.resx">
+    <EmbeddedResource Include="GUI\ctrlStatistic.resx">
       <DependentUpon>ctrlStatistic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\BillInfoForm.resx">

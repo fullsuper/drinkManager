@@ -224,7 +224,6 @@
             this.btnPrintBill.TabIndex = 7;
             this.btnPrintBill.Text = "Print";
             this.btnPrintBill.UseVisualStyleBackColor = false;
-            this.btnPrintBill.Click += new System.EventHandler(this.btnPrintBill_Click);
             // 
             // label8
             // 
